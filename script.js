@@ -137,6 +137,7 @@ const noBtn = document.getElementById("noBtn");
 const buttonsWrap = document.getElementById("valentineButtons");
 const yesBtn = document.getElementById("yesBtn");
 const yesMessage = document.getElementById("yesMessage");
+const celebration = document.getElementById("celebration");
 const quizScore = document.getElementById("quizScore");
 const resetQuizBtn = document.getElementById("resetQuiz");
 const quizQuestions = document.querySelectorAll(".quiz-question");
@@ -165,6 +166,7 @@ function moveNoButton() {
 yesBtn.addEventListener("click", () => {
   yesMessage.hidden = false;
   buttonsWrap.style.display = "none";
+  celebration.classList.add("show");
 });
 
 window.addEventListener("resize", () => {
